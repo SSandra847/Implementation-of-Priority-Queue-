@@ -1,0 +1,35 @@
+// creating object for queue classs 
+var priorityQueue = new PriorityQueue(); 
+  
+// testing isEmpty and front on an empty queue 
+// return true 
+console.log(priorityQueue.isEmpty()); 
+  
+// returns "No elements in Queue" 
+console.log(priorityQueue.front()); 
+  
+// adding elements to the queue 
+priorityQueue.enqueue("Sun", 2); 
+priorityQueue.enqueue("Water", 1); 
+priorityQueue.enqueue("Air", 1); 
+priorityQueue.enqueue("Soil", 2); 
+priorityQueue.enqueue("Ice", 3); 
+  
+// prints [queue]
+console.log(priorityQueue.printPQueue()); 
+  
+// prints water
+console.log(priorityQueue.front().element); 
+  
+// pritns air 
+console.log(priorityQueue.rear().element); 
+  
+// removes soil
+// priorityQueue contains 
+console.log(priorityQueue.dequeue().element); 
+  
+// Adding another element to the queue 
+priorityQueue.enqueue("Sun", 2); 
+  
+// prints 
+console.log(priorityQueue.printPQueue()); 
